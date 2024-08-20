@@ -1,19 +1,4 @@
-@font-face {
-  font-family: "satoshi";
-  src: url("./fonts/Satoshi-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "satoshi";
-  src: url("./fonts/Satoshi-Bold.woff") format("woff");
-  font-weight:bold;
-  font-style: normal;
-  
-}
-
 body{
   font-family: "satoshi";
+  background-color: #090A0C;
 }
