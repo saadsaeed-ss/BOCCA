@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Box
       sx={{
-        padding: "500px 0 50px 0", // Adjust overall padding as needed
+        padding: "500px 0 100px 0", // Adjust overall padding as needed
         backgroundImage: `url(${Image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
