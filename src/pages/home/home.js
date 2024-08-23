@@ -7,6 +7,7 @@ import HotelSection from "./components/HotelSec";
 import Testimonial from "./components/Testimonials";
 import WhyChooseBocca from "./components/WhyChooseBocca";
 import BoccaTokenSection from "./components/BoccaToken";
+import Tokenomics from "./components/Tokenomics";
 //
 //
 //
@@ -21,6 +22,7 @@ function HomePage() {
       <Testimonial />
       <WhyChooseBocca />
       <BoccaTokenSection />
+      <Tokenomics />
     </>
   );
 }
