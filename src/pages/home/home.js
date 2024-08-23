@@ -4,7 +4,9 @@ import Partner from "./components/Partner";
 import Works from "./components/Works";
 import Features from "./components/Features";
 import HotelSection from "./components/HotelSec";
-import Testimonial20 from "./components/Testimonials";
+import Testimonial from "./components/Testimonials";
+import WhyChooseBocca from "./components/WhyChooseBocca";
+import BoccaTokenSection from "./components/BoccaToken";
 //
 //
 //
@@ -16,7 +18,9 @@ function HomePage() {
       <Works />
       <Features />
       <HotelSection />
-      <Testimonial20 />
+      <Testimonial />
+      <WhyChooseBocca />
+      <BoccaTokenSection />
     </>
   );
 }
