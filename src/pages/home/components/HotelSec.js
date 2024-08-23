@@ -9,7 +9,7 @@ const HotelSection = () => {
       sx={{
         color: "#fff",
         backgroundColor: "#000",
-        paddingY: "100px", // Padding on top and bottom
+        paddingY: "100px 0", // Padding on top and bottom
         paddingX: { xs: "16px", sm: "24px", md: "48px" }, // Add padding on the sides for smaller screens
       }}
     >

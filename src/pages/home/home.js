@@ -8,6 +8,9 @@ import Testimonial from "./components/Testimonials";
 import WhyChooseBocca from "./components/WhyChooseBocca";
 import BoccaTokenSection from "./components/BoccaToken";
 import Tokenomics from "./components/Tokenomics";
+import RoadmapSection from "./components/Roadmap";
+import Vision from "./components/Vision";
+import Contactinfo from "./components/Contact";
 //
 //
 //
@@ -23,6 +26,9 @@ function HomePage() {
       <WhyChooseBocca />
       <BoccaTokenSection />
       <Tokenomics />
+      <RoadmapSection />
+      <Vision />
+      <Contactinfo />
     </>
   );
 }

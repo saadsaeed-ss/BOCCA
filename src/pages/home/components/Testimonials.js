@@ -97,7 +97,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="py-14 md:py-24 bg-[#040405] text-zinc-900 dark:text-white relative z-[1]">
+    <section className="py-14 md:py-24 bg-black text-zinc-900 dark:text-white relative z-[1]">
       <div className="container max-w-full lg:pl-16 px-4 mx-auto">
         {" "}
         {/* Added padding-left on large screens */}
