@@ -42,7 +42,7 @@ const Partner = () => {
               gutterBottom
               variant="h1"
               sx={{
-                fontSize: { xs: "24px", md: "38px" },
+                fontSize: "38px",
                 fontWeight: "bold",
                 fontFamily: '"Satoshi", sans-serif',
                 lineHeight: 1.1,

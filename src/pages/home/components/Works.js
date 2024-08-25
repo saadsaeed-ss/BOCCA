@@ -7,7 +7,7 @@ const Works = () => {
     <Container
       maxWidth="lg"
       sx={{
-        padding: "50px",
+        padding: { xs: "50px 25px", md: "50px" },
         borderRadius: "20px",
         border: "1px solid #242424",
         marginBottom: "50px",

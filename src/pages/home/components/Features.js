@@ -29,7 +29,7 @@ const Features = () => {
   return (
     <Container
       sx={{
-        padding: { xs: "16px", md: "24px", lg: "0px" }, // Adjust padding for different screen sizes
+        padding: { xs: "16px", md: "24px", lg: "0px" },
         marginBottom: "50px",
       }}
     >
@@ -38,7 +38,7 @@ const Features = () => {
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
-          alignItems: "stretch", // Ensures all boxes stretch to the same height
+          alignItems: "stretch",
         }}
       >
         {features.map((feature, index) => (
@@ -46,14 +46,15 @@ const Features = () => {
             key={index}
             sx={{
               flex: 1,
-              textAlign: "left", // Ensure left alignment on all screen sizes
+              textAlign: { xs: "center", md: "left" },
               padding: "20px",
               margin: "10px",
               borderRadius: "24px",
               border: "1px solid #242424",
               display: "flex",
               flexDirection: "column",
-              justifyContent: "flex-start", // Align content to the top
+              justifyContent: "flex-start",
+              alignItems: { xs: "center", md: "flex-start" },
             }}
           >
             <Box
@@ -61,10 +62,9 @@ const Features = () => {
               src={feature.image}
               alt={feature.title}
               sx={{
-                maxWidth: { xs: "80%", md: "100%" }, // Adjust the max width on smaller screens
+                maxWidth: { xs: "80%", sm: "60%", md: "100%" }, // Slightly reduce size on sm screens
                 height: "auto",
                 marginBottom: "40px",
-                alignSelf: { xs: "flex-start", md: "flex-start" }, // Align the image to the left on all screen sizes
               }}
             />
             <Typography
@@ -83,6 +83,7 @@ const Features = () => {
               sx={{
                 color: "#ccc",
                 fontFamily: '"Satoshi", sans-serif',
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               {feature.description}

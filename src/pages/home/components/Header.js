@@ -18,7 +18,7 @@ const Header = () => {
       <Container
         sx={{
           maxWidth: "1200px",
-          padding: 0, // Set padding to 0
+          padding: { lg: 0 }, // Set padding to 0 on large screens only
         }}
       >
         <Box

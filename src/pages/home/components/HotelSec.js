@@ -9,26 +9,25 @@ const HotelSection = () => {
       sx={{
         color: "#fff",
         backgroundColor: "#000",
-        paddingY: "100px 0", // Padding on top and bottom
-        paddingX: { xs: "16px", sm: "24px", md: "48px" }, // Add padding on the sides for smaller screens
+        padding: "100px 0 0 0",
+        paddingX: { xs: "16px", sm: "24px", md: "48px" },
       }}
     >
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", md: "row" }, // Stack on small screens, row layout on medium and up
-          alignItems: "center", // Center items vertically when in row layout
-          justifyContent: "space-between", // Space items evenly when in row layout
+          flexDirection: { xs: "column", md: "row" },
+          alignItems: "center",
+          justifyContent: "space-between",
           maxWidth: "lg",
           margin: "0 auto",
         }}
       >
-        {/* Left Side - Text Content */}
         <Box
           sx={{
             flex: 1,
-            marginRight: { md: "50px" }, // Add margin to the right of the text on larger screens
-            textAlign: "left", // Left align text on all screen sizes
+            marginRight: { md: "50px" },
+            textAlign: "left",
           }}
         >
           <Typography
@@ -45,7 +44,7 @@ const HotelSection = () => {
           <Typography
             variant="body1"
             sx={{
-              color: "#0066ff", // Blue color for the "BOCCA proudly announces..." text
+              color: "#0066ff",
               fontFamily: '"Satoshi", sans-serif',
               marginBottom: "20px",
             }}
@@ -93,13 +92,12 @@ const HotelSection = () => {
           </Box>
         </Box>
 
-        {/* Right Side - Image */}
         <Box
           sx={{
             flex: 1,
-            maxWidth: { xs: "80%", md: "60%" }, // Reduce the image size on large screens
-            textAlign: "center", // Center the image
-            marginTop: { xs: "20px", md: "0px" }, // Add top margin on smaller screens for spacing
+            maxWidth: { xs: "100%", md: "70%" },
+            textAlign: "right",
+            marginTop: { xs: "20px", md: "0px" },
           }}
         >
           <Box
@@ -107,7 +105,7 @@ const HotelSection = () => {
             src={DamianiHotelImg}
             alt="Damianii Luxury Hotel"
             sx={{
-              width: "80%",
+              width: "100%",
               height: "auto",
               borderRadius: "24px",
             }}

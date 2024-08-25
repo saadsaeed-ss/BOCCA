@@ -14,7 +14,7 @@ const BoccaTokenSection = () => {
   return (
     <Container
       sx={{
-        padding: "100px 20px 50px",
+        padding: { xs: "100px 20px 50px", lg: "100px 0px 50px" },
         color: "#fff",
       }}
     >
@@ -271,7 +271,7 @@ const BoccaTokenSection = () => {
           <Box
             sx={{
               flex: 1,
-              maxWidth: "500px",
+              maxWidth: { xs: "100%", lg: "500px" },
               margin: "0 auto",
             }}
           >

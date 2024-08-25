@@ -13,7 +13,11 @@ const RoadmapSection = () => {
         padding: "100px 0",
       }}
     >
-      <Container>
+      <Container
+        sx={{
+          padding: { lg: 0 },
+        }}
+      >
         <Typography
           variant="h2"
           sx={{

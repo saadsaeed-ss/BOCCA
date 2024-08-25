@@ -10,13 +10,13 @@ const WhyChooseBocca = () => {
   return (
     <Container
       sx={{
-        padding: "100px 20px",
+        padding: { xs: "100px 20px", lg: " 100px 0px" }, // Apply padding on small screens and none on large screens
       }}
     >
       {/* Upper Section */}
       <Box
         sx={{
-          paddingBottom: 10,
+          paddingBottom: { xs: 5, md: 10 },
           color: "#fff",
         }}
       >
@@ -56,15 +56,21 @@ const WhyChooseBocca = () => {
           sx={{
             flex: 1.5,
             display: "flex",
-            justifyContent: "center",
+            justifyContent: { xs: "flex-start", md: "center" },
             alignItems: "center",
             padding: { xs: 2, md: 0 },
+            // Adjust the image size for small screens
+            maxWidth: { xs: "100%", md: "500px" },
           }}
         >
           <img
             src={BoccaImg}
             alt="BOCCA"
-            style={{ width: "100%", maxWidth: 500, height: "auto" }}
+            style={{
+              width: "100%",
+              height: "auto",
+              maxWidth: { xs: "300px", md: "500px" }, // Adjust size for small screens
+            }}
           />
         </Box>
 
