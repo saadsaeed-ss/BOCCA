@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
@@ -34,7 +35,7 @@ function Navbar() {
         top: 0,
         left: 0,
         width: "100%",
-        zIndex: 1200, // Ensures the Navbar is above other content
+        zIndex: 1200,
         marginTop: "30px",
       }}
     >
@@ -44,7 +45,7 @@ function Navbar() {
           boxShadow: 0,
           width: "100%",
           maxWidth: "1200px",
-          margin: "0 auto", // Center the AppBar horizontally
+          margin: "0 auto",
           bgcolor: "#090A0C",
           border: "1px solid #96D0FF",
           borderRadius: 2,
@@ -63,7 +64,7 @@ function Navbar() {
               alignItems: "center",
             }}
           >
-            <a href="/">
+            <Link to="/">
               <img
                 src={Logo}
                 alt="BOCCA Logo"
@@ -73,23 +74,33 @@ function Navbar() {
                   cursor: "pointer",
                 }}
               />
-            </a>
+            </Link>
           </Box>
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: 4 }}>
-            <MenuItem href="#home" sx={{ py: "6px", px: "12px" }}>
-              <Typography sx={typographyStyles}>HOME</Typography>
+            <MenuItem sx={{ py: "6px", px: "12px" }}>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Typography sx={typographyStyles}>HOME</Typography>
+              </Link>
             </MenuItem>
-            <MenuItem href="#about-us" sx={{ py: "6px", px: "12px" }}>
-              <Typography sx={typographyStyles}>ABOUT US</Typography>
+            <MenuItem sx={{ py: "6px", px: "12px" }}>
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                <Typography sx={typographyStyles}>ABOUT US</Typography>
+              </Link>
             </MenuItem>
-            <MenuItem href="#token" sx={{ py: "6px", px: "12px" }}>
-              <Typography sx={typographyStyles}>TOKEN</Typography>
+            <MenuItem sx={{ py: "6px", px: "12px" }}>
+              <Link to="/token" style={{ textDecoration: "none" }}>
+                <Typography sx={typographyStyles}>TOKEN</Typography>
+              </Link>
             </MenuItem>
-            <MenuItem href="#roadmap" sx={{ py: "6px", px: "12px" }}>
-              <Typography sx={typographyStyles}>ROADMAP</Typography>
+            <MenuItem sx={{ py: "6px", px: "12px" }}>
+              <Link to="/roadmap" style={{ textDecoration: "none" }}>
+                <Typography sx={typographyStyles}>ROADMAP</Typography>
+              </Link>
             </MenuItem>
-            <MenuItem href="#contact-us" sx={{ py: "6px", px: "12px" }}>
-              <Typography sx={typographyStyles}>CONTACT US</Typography>
+            <MenuItem sx={{ py: "6px", px: "12px" }}>
+              <Link to="/contact-us" style={{ textDecoration: "none" }}>
+                <Typography sx={typographyStyles}>CONTACT US</Typography>
+              </Link>
             </MenuItem>
           </Box>
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
@@ -146,20 +157,30 @@ function Navbar() {
           </IconButton>
         </Box>
         <Box sx={{ display: "flex", flexDirection: "column", px: 2 }}>
-          <MenuItem href="#home" onClick={toggleDrawer(false)}>
-            <Typography sx={typographyStyles}>HOME</Typography>
+          <MenuItem onClick={toggleDrawer(false)}>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Typography sx={typographyStyles}>HOME</Typography>
+            </Link>
           </MenuItem>
-          <MenuItem href="#about-us" onClick={toggleDrawer(false)}>
-            <Typography sx={typographyStyles}>ABOUT US</Typography>
+          <MenuItem onClick={toggleDrawer(false)}>
+            <Link to="/about-us" style={{ textDecoration: "none" }}>
+              <Typography sx={typographyStyles}>ABOUT US</Typography>
+            </Link>
           </MenuItem>
-          <MenuItem href="#token" onClick={toggleDrawer(false)}>
-            <Typography sx={typographyStyles}>TOKEN</Typography>
+          <MenuItem onClick={toggleDrawer(false)}>
+            <Link to="/token" style={{ textDecoration: "none" }}>
+              <Typography sx={typographyStyles}>TOKEN</Typography>
+            </Link>
           </MenuItem>
-          <MenuItem href="#roadmap" onClick={toggleDrawer(false)}>
-            <Typography sx={typographyStyles}>ROADMAP</Typography>
+          <MenuItem onClick={toggleDrawer(false)}>
+            <Link to="/roadmap" style={{ textDecoration: "none" }}>
+              <Typography sx={typographyStyles}>ROADMAP</Typography>
+            </Link>
           </MenuItem>
-          <MenuItem href="#contact-us" onClick={toggleDrawer(false)}>
-            <Typography sx={typographyStyles}>CONTACT US</Typography>
+          <MenuItem onClick={toggleDrawer(false)}>
+            <Link to="/contact-us" style={{ textDecoration: "none" }}>
+              <Typography sx={typographyStyles}>CONTACT US</Typography>
+            </Link>
           </MenuItem>
         </Box>
       </Drawer>

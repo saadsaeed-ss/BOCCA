@@ -11,12 +11,16 @@ import Tokenomics from "./components/Tokenomics";
 import RoadmapSection from "./components/Roadmap";
 import Vision from "./components/Vision";
 import Contactinfo from "./components/Contact";
+import Navbar from "../../layout/navbar";
+import Footer from "../../layout/footer";
+
 //
 //
 //
 function HomePage() {
   return (
     <>
+      <Navbar />
       <Header />
       <Partner />
       <Works />
@@ -29,6 +33,7 @@ function HomePage() {
       <RoadmapSection />
       <Vision />
       <Contactinfo />
+      <Footer />
     </>
   );
 }
