@@ -9,7 +9,8 @@ const Header = () => {
   return (
     <Box
       sx={{
-        padding: { xs: "200px 0 100px 0" },
+        position: "relative",
+        padding: { xs: "120px 0 100px 0", md: "200px 0 400px 0" },
         backgroundImage: `url(${Image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -47,7 +48,7 @@ const Header = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: { xs: "8px", md: "16px" },
-                alignItems: "center",
+                alignItems: { xs: "center", md: "center" },
               }}
             >
               <Typography
@@ -72,7 +73,6 @@ const Header = () => {
                   fontFamily: '"Satoshi", sans-serif',
                   maxWidth: { xs: "100%", md: "70%" },
                   color: "#E6E7E7",
-                  mb: 5,
                 }}
               >
                 BOCCA democratizes real estate investment by allowing you to own
@@ -82,22 +82,21 @@ const Header = () => {
               </Typography>
             </Box>
 
-            {/* Images section for all screens */}
+            {/* Images section for small screens */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: { xs: "column", sm: "row" }, // Column on xs, Row on sm and up
+                display: { xs: "flex", md: "none" }, // Visible only on small screens
+                flexDirection: { xs: "column", sm: "row" },
                 gap: 2,
                 alignItems: "center",
-                justifyContent: "center",
-                // Center the images horizontally
-                margin: "0 auto",
-                maxWidth: "100%", // Ensure it doesn't exceed the container's width
+                justifyContent: "center", // Center images on small screens
+                mt: 4,
               }}
             >
               <Box
                 sx={{
-                  flex: 1,
+                  width: { xs: "100%", sm: "30%" },
+                  height: { xs: "250px", sm: "300px" }, // Reduced height on xs screens
                   overflow: "hidden",
                 }}
               >
@@ -106,7 +105,7 @@ const Header = () => {
                   alt="Property 1"
                   style={{
                     width: "100%",
-                    height: "auto",
+                    height: "100%",
                     objectFit: "cover",
                     borderRadius: "12px",
                   }}
@@ -114,7 +113,8 @@ const Header = () => {
               </Box>
               <Box
                 sx={{
-                  flex: 1,
+                  width: { xs: "100%", sm: "30%" },
+                  height: { xs: "250px", sm: "auto" }, // Reduced height on xs screens
                   overflow: "hidden",
                 }}
               >
@@ -123,7 +123,7 @@ const Header = () => {
                   alt="Property 2"
                   style={{
                     width: "100%",
-                    height: "auto",
+                    height: "100%",
                     objectFit: "cover",
                     borderRadius: "12px",
                   }}
@@ -131,7 +131,8 @@ const Header = () => {
               </Box>
               <Box
                 sx={{
-                  flex: 1,
+                  width: { xs: "100%", sm: "30%" },
+                  height: { xs: "250px", sm: "auto" }, // Reduced height on xs screens
                   overflow: "hidden",
                 }}
               >
@@ -140,7 +141,7 @@ const Header = () => {
                   alt="Property 3"
                   style={{
                     width: "100%",
-                    height: "auto",
+                    height: "100%",
                     objectFit: "cover",
                     borderRadius: "12px",
                   }}
@@ -150,6 +151,78 @@ const Header = () => {
           </Box>
         </Box>
       </Container>
+
+      {/* Images section for medium and larger screens */}
+      <Box
+        sx={{
+          display: { xs: "none", md: "flex" }, // Visible only on medium and larger screens
+          position: "absolute",
+          left: "50%",
+          bottom: "-50px",
+          transform: "translateX(-50%)",
+          justifyContent: "center", // Center images on larger screens
+          alignItems: "center",
+          gap: 2,
+          zIndex: 1,
+          flexDirection: "row",
+          flexWrap: "nowrap",
+        }}
+      >
+        <Box
+          sx={{
+            width: "301px",
+            height: "361px",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src={PropertyCard}
+            alt="Property 1"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "12px",
+            }}
+          />
+        </Box>
+        <Box
+          sx={{
+            width: "301px",
+            height: "361px",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src={PropertyCard2}
+            alt="Property 2"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "12px",
+            }}
+          />
+        </Box>
+        <Box
+          sx={{
+            width: "301px",
+            height: "361px",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src={PropertyCard3}
+            alt="Property 3"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "12px",
+            }}
+          />
+        </Box>
+      </Box>
     </Box>
   );
 };

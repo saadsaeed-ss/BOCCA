@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
-import Partner from "./components/Partner";
-import Works from "./components/Works";
+import GoalSec from "./components/GoalSec";
+import StepSec from "./components/StepSec";
 import Features from "./components/Features";
 import HotelSection from "./components/HotelSec";
 import WhyChooseBocca from "./components/WhyChooseBocca";
@@ -20,8 +20,8 @@ function AboutPage() {
     <>
       <Navbar />
       <Header />
-      <Partner />
-      <Works />
+      <GoalSec />
+      <StepSec />
       <Features />
       <HotelSection />
       <WhyChooseBocca />
