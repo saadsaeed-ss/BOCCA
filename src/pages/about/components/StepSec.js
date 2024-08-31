@@ -9,7 +9,7 @@ const StepSec = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "100px 0",
+        padding: "50 0 100px 0",
         flexDirection: "column",
       }}
     >
