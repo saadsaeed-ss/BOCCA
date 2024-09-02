@@ -19,7 +19,7 @@ const Header = () => {
     >
       <Container
         sx={{
-          maxWidth: "1200px",
+          width: "100%",
           padding: { lg: 0 },
         }}
       >
@@ -55,10 +55,10 @@ const Header = () => {
                 gutterBottom
                 variant="h1"
                 sx={{
-                  fontSize: { xs: "48px", md: "96px" },
+                  fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
                   fontFamily: '"Satoshi", sans-serif',
-                  lineHeight: 1,
+                  lineHeight: "110%",
                 }}
               >
                 We are <span style={{ color: "#2F7AFF" }}>revolutionizing</span>
@@ -69,7 +69,7 @@ const Header = () => {
               <Typography
                 gutterBottom
                 sx={{
-                  fontSize: { xs: "14px", md: "16px" },
+                  fontSize: { xs: "14px", md: "18px" },
                   fontFamily: '"Satoshi", sans-serif',
                   maxWidth: { xs: "100%", md: "70%" },
                   color: "#E6E7E7",

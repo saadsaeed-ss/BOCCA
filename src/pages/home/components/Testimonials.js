@@ -56,10 +56,12 @@ const TestimonialItem = ({ item }) => {
             />
           </div>
           <div>
-            <h5 style={{ fontFamily: '"Satoshi", sans-serif' }}>{name}</h5>
+            <h5 style={{ fontFamily: '"Satoshi", sans-serif', color: "white" }}>
+              {name}
+            </h5>
             <p
               className="text-xs mb-2"
-              style={{ fontFamily: '"Satoshi", sans-serif' }}
+              style={{ fontFamily: '"Satoshi", sans-serif', color: "white" }}
             >
               {position}
             </p>
@@ -67,7 +69,7 @@ const TestimonialItem = ({ item }) => {
         </div>
         <p
           className="text-sm opacity-75 mb-2 leading-snug"
-          style={{ fontFamily: '"Satoshi", sans-serif' }}
+          style={{ fontFamily: '"Satoshi", sans-serif', color: "white" }}
         >
           {content}
         </p>

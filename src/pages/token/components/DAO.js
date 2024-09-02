@@ -19,7 +19,6 @@ const DAO = () => {
       <Box
         display="flex"
         flexDirection="column"
-        py={20}
         gap={{ xs: "40px", md: "80px" }}
       >
         <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={4}>

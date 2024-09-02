@@ -11,11 +11,13 @@ const Partner = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "100px 0", // Adjust overall padding as needed
       }}
     >
       <Container
         sx={{
+          py: { xs: "40px", md: "80px" },
+          width: "100%",
+          px: { md: 0 },
           textAlign: "center", // Centers text content horizontally
         }}
       >

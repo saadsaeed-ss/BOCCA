@@ -49,7 +49,7 @@ const Header = () => {
             </Typography>
             <Typography
               color="#E6E7E7"
-              fontSize={{ xs: "13px", md: "18px" }}
+              fontSize={{ xs: "14px", md: "18px" }}
               fontWeight="regular"
               fontFamily='"Satoshi", sans-serif'
               lineHeight="130%"

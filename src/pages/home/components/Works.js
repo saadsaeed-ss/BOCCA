@@ -7,10 +7,12 @@ const Works = () => {
     <Container
       maxWidth="lg"
       sx={{
+        marginTop: { xs: "40px", md: "80px" },
+        width: "100%",
         padding: { xs: "50px 25px", md: "50px" },
         borderRadius: "20px",
         border: "1px solid #242424",
-        marginBottom: "50px",
+        marginBottom: { xs: "20px", md: "40px" },
       }}
     >
       <Box

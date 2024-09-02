@@ -29,8 +29,8 @@ const Features = () => {
   return (
     <Container
       sx={{
-        padding: { xs: "16px", md: "24px", lg: "0px" },
-        marginBottom: "50px",
+        padding: { md: "0px" },
+        marginBottom: { xs: "40px", md: "120px" },
       }}
     >
       <Box
@@ -38,7 +38,6 @@ const Features = () => {
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
-          alignItems: "stretch",
         }}
       >
         {features.map((feature, index) => (
@@ -46,7 +45,7 @@ const Features = () => {
             key={index}
             sx={{
               flex: 1,
-              textAlign: { xs: "center", md: "left" },
+              textAlign: "left",
               padding: "20px",
               margin: "10px",
               borderRadius: "24px",
@@ -79,8 +78,8 @@ const Features = () => {
               {feature.title}
             </Typography>
             <Typography
-              variant="body2"
               sx={{
+                fontSize: { xs: "14px", md: "16px" },
                 color: "#ccc",
                 fontFamily: '"Satoshi", sans-serif',
                 textAlign: { xs: "center", md: "left" },
