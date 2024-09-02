@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Container, Typography, Button } from "@mui/material";
 import Stack from "@mui/material/Stack";
-import img1 from "../../assets/staking1.svg";
-import img2 from "../../assets/staking2.svg";
-import img3 from "../../assets/staking3.svg";
-import img4 from "../../assets/staking4.svg";
+import img1 from "../../../assets/staking1.svg";
+import img2 from "../../../assets/staking2.svg";
+import img3 from "../../../assets/staking3.svg";
+import img4 from "../../../assets/staking4.svg";
 
 const Staking = () => {
   return (
@@ -16,6 +16,9 @@ const Staking = () => {
         paddingTop: "140px",
         justifyContent: "center",
         alignItems: "center",
+        py: { xs: "40px", md: "80px" },
+        width: "100%",
+        px: { lg: 0 },
       }}
     >
       <Box>

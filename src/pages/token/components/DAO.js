@@ -11,8 +11,9 @@ const DAO = () => {
   return (
     <Container
       sx={{
+        py: { xs: "40px", md: "80px" },
         width: "100%",
-        padding: { lg: 0 },
+        px: { lg: 0 },
       }}
     >
       <Box
