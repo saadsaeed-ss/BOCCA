@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Box, Typography } from "@mui/material";
-import FractionalOwnershipImg from "../../../assets/FractionalOwnershipImg.png";
-import LiquidityImg from "../../../assets/LiquidityImg.png";
-import DiversificationImg from "../../../assets/DiversificationImg.png";
+import FractionalOwnershipImg from "../../../assets/Fractional Ownership.svg";
+import LiquidityImg from "../../../assets/Liquidity.svg";
+import DiversificationImg from "../../../assets/Diversification.svg";
 
 const Features = () => {
   const features = [

@@ -13,12 +13,11 @@ const Staking = () => {
         display: "flex",
         flexDirection: "column",
         gap: { xs: "40px", md: "80px" },
-        paddingTop: "140px",
         justifyContent: "center",
         alignItems: "center",
         py: { xs: "40px", md: "80px" },
         width: "100%",
-        px: { lg: 0 },
+        px: { md: 0 },
       }}
     >
       <Box>

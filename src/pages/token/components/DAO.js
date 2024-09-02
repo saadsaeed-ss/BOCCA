@@ -13,7 +13,7 @@ const DAO = () => {
       sx={{
         py: { xs: "40px", md: "80px" },
         width: "100%",
-        px: { lg: 0 },
+        px: { md: 0 },
       }}
     >
       <Box

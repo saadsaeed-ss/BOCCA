@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Box, Typography, Link } from "@mui/material";
-import WorksImg from "../../../assets/HomeWorksSecimg.png";
+import WorksImg from "../../../assets/how bocca works.svg";
 
 const Works = () => {
   return (

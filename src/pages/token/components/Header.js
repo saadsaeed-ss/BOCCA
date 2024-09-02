@@ -25,7 +25,7 @@ const Header = () => {
           justifyContent: "space-between",
           alignItems: "center",
           width: "100%",
-          padding: { lg: 0 },
+          padding: { md: 0 },
           gap: { xs: "50px", md: "0px" },
         }}
       >
