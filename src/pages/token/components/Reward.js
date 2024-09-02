@@ -17,6 +17,7 @@ const Reward = () => {
             "linear-gradient(90deg, rgba(9,10,12,1) 0%, rgba(47,122,255,1) 50%, rgba(9,10,12,1) 100%)",
         }}
         py="1px"
+        justifyItems="center"
       >
         <Box
           backgroundColor="#090A0C"

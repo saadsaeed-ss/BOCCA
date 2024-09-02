@@ -96,17 +96,6 @@ const IconText = () => {
             </Typography>
           </Box>
         </Box>
-        <Typography
-          color="#FFF"
-          fontFamily="Satoshi"
-          fontSize={{ xs: "15px", md: "50px" }}
-          fontStyle="normal"
-          fontWeight="700"
-          lineHeight="100%"
-        >
-          Buy, hold and <span style={{ color: "#2F7AFF" }}>earn rewards</span>{" "}
-          in $BOCCA
-        </Typography>
       </Box>
     </Container>
   );
